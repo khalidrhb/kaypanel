@@ -1,0 +1,9 @@
+services:
+  kaypanel:
+    image: ghcr.io/kaypanel/kaypanel:latest
+    ports:
+      - "8090:8090"
+    volumes:
+      - kaypanel_data:/var/lib/kaypanel
+volumes:
+  kaypanel_data: {}
